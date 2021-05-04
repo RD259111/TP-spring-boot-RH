@@ -4,37 +4,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script defer="defer" src="../webjars/jquery/1.9.1/jquery.min.js"></script>
+<script defer="defer" src="../webjars/popper.js/1.16.0/umd/popper.min.js"></script>
+<script defer="defer" src="../webjars/bootstrap/4.6.0/js/bootstrap.min.js"></script>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link href="webjars/bootstrap/4.6.0/css/bootstrap.min.css"
+	rel="stylesheet">
 </head>
 <body>
-	<h2>Formulaire update employé</h2>
+
+<div class="container">
+	<h2 class="text-center">Modification des employés</h2>
 	
 	<form:form action="update" modelAttribute="employe">
 		<form:hidden path="idEmployee" />
 		<br>
 
-		<form:label path="name">Nom</form:label>
-		<form:input path="name" />
+	<div class="row form-group ml-4">
+		<form:label class="col-sm-3" path="name">Nom</form:label>
+		<form:input class="form-control col-sm-9" path="name" />
+		</div>
 		<br>
 
-		<form:label path="lastName">Prénom</form:label>
-		<form:input path="lastName" />
+	<div class="row form-group ml-4">
+		<form:label class="col-sm-3" path="lastName">Prénom</form:label>
+		<form:input class="form-control col-sm-9" path="lastName" />
+		</div>
 		<br>
 
-		<form:label path="adress">Adresse</form:label>
-		<form:input path="adress" />
+	<div class="row form-group ml-4">
+		<form:label class="col-sm-3" path="adress">Adresse</form:label>
+		<form:input class="form-control col-sm-9" path="adress" />
+		</div>
 		<br>
 
-		<form:label path="average">Salaire</form:label>
-		<form:input path="average" />
+	<div class="row form-group ml-4">
+		<form:label class="col-sm-3" path="average">Salaire</form:label>
+		<form:input class="form-control col-sm-9" path="average" />
+		</div>
 		<br>
 
-		<form:label path="telNumber">Numéro téléphone</form:label>
-		<form:input path="telNumber" />
+	<div class="row form-group ml-4">
+		<form:label class="col-sm-3" path="telNumber">Numéro téléphone</form:label>
+		<form:input class="form-control col-sm-9" path="telNumber" />
+		</div>
 		<br>
 
-		<input type="submit" value="Valider" />
+		<input class="btn btn-primary" type="submit" value="Valider" />
+		</div>
 	</form:form>
 </body>
 </html>
